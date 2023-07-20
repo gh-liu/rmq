@@ -21,3 +21,13 @@ queue: store messages
 2. create a channel
 3. declare a queue
 4. consume messages
+
+## work queue
+
+Round-robin dispatching: by default, RabbitMQ will send each message to the next consumer, in sequence.
+
+Message acknowledgment: make sure a message is never lost.
+
+Message durability: make sure messages aren't lost when RabbitMQ quits or crashes.
+
+Fair dispatch: using prefetch count
